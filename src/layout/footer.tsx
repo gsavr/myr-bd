@@ -8,9 +8,9 @@ import Image from "next/image";
 export function Footer() {
   return (
     <footer className="bg-slate-200/60 text-[#4d5153] md:sticky md:top-[100vh]  dark:bg-slate-800/60 dark:text-[#b3bdc2]">
-      <div className="container relative mx-auto px-5 pb-5 pt-0">
+      <div className="container relative mx-auto px-5 pb-5 pt-0 md:px-1 lg:px-5">
         {/*  Flex container for all items  */}
-        <div className="flex flex-col-reverse items-center items-center justify-between space-y-12 md:flex-row-reverse md:space-y-0">
+        <div className="flex flex-col-reverse items-center  justify-between space-y-12 md:flex-row-reverse md:space-y-0">
           {/* Copy */}
           <div className="mt-5 text-xs md:text-sm">
             <div className="flex space-x-3">
