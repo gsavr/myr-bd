@@ -7,8 +7,7 @@ import { Header } from "@/layout/header";
 const aleg = Alegreya_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title:
-    "Myrian: Enchanting Bellydance - Professional Performances with 15+ Years Expertise",
+  title: "Myrian - Enchanting Professional Bellydance Performances",
   description:
     "Explore the mesmerizing world of Myrian, a seasoned professional bellydancer with over 15 years of expertise.",
   keywords: "belly, dancing, bellydancing, Myrian, Sanchez, Austin, TX",
