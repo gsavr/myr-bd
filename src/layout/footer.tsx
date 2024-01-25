@@ -4,7 +4,7 @@ import tiktok from "../assets/images/tt.webp";
 import youtube from "../assets/images/yt.webp";
 import whatsapp from "../assets/images/wa.webp";
 import Image from "next/image";
-import { IconEmail, IconTelephone } from "../components/Svg-icons";
+import { IconEmail, IconTelephone } from "../components/SvgIcons";
 
 export function Footer() {
   return (
