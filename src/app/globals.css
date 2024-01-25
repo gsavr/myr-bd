@@ -53,3 +53,9 @@ body {
 .h2 {
   @apply mb-3 text-2xl font-semibold;
 }
+
+/* nav */
+
+.nav-link {
+  @apply rounded-lg border border-transparent px-5 transition-colors hover:border-gray-300 hover:bg-gray-100 md:pb-2 md:pt-2 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30;
+}
