@@ -4,7 +4,7 @@ export default function About() {
       <div>
         <div className="p-4 text-xl">
           <p>
-            Born and raised in Andalusia, Spain, I've been dancing
+            Born and raised in Andalusia, Spain, I{"'"}ve been dancing
             professionally for over 15 years. Winner of the famous Miss
             Bellydance Spain contest in 2008.
           </p>
