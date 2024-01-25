@@ -1,3 +1,20 @@
+@font-face {
+  font-family: Asta;
+  src: url("../assets/fonts/astaghfirullo.ttf") format("truetype");
+}
+@font-face {
+  font-family: Ceria;
+  src: url("../assets/fonts/ceria.otf") format("truetype");
+}
+@font-face {
+  font-family: Salam;
+  src: url("../assets/fonts/salam.ttf") format("truetype");
+}
+@font-face {
+  font-family: Miracle;
+  src: url("../assets/fonts/miracle.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
