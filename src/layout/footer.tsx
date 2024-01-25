@@ -11,9 +11,9 @@ export function Footer() {
     <footer className="bg-slate-200/60 text-[#4d5153] md:sticky md:top-[100vh]  dark:bg-slate-800/60 dark:text-[#b3bdc2]">
       <div className="container relative mx-auto px-5 pb-5 pt-0 md:px-0 lg:px-5">
         {/*  Flex container for all items  */}
-        <div className="flex flex-col-reverse items-center  justify-between space-y-12 md:flex-row-reverse md:space-y-0">
+        <div className="flex flex-col-reverse items-center justify-between space-y-12 md:flex-row-reverse md:space-y-0">
           {/* Copy */}
-          <div className="mt-5 text-xs md:text-sm">
+          <div className="text mt-5 text-sm md:text-base">
             <div className="flex space-x-3">
               <span>&copy; 2024 Myrian Bellydancing</span>
             </div>
@@ -79,7 +79,7 @@ export function Footer() {
             </div>
           </div>
           {/* Contact */}
-          <div className="text-md -pt-3 lg:text-md mt-5 flex flex-col items-center pb-5 md:items-start md:pt-10 md:text-sm">
+          <div className="-pt-3 mt-5 flex flex-col items-center pb-5 text-lg md:items-start md:pt-10 md:text-base lg:text-lg">
             <div className="flex space-x-3">
               <a href="tel:15129986317" className="flex items-center">
                 <IconTelephone /> <span className="pl-1">+1 512 998 6317</span>
