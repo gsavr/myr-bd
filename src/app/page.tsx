@@ -37,7 +37,7 @@ export default function Home() {
           </p>
         </Link>
 
-        <Link href="/gallery" className="main-link group">
+        <Link href="/photos" className="main-link group">
           <h2 className={`h2`}>
             Photos{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
