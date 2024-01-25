@@ -1,10 +1,10 @@
-import fb from "../images/fb.webp";
-import ig from "../images/ig.webp";
-import tiktok from "../images/tt.webp";
-import youtube from "../images/yt.webp";
-import whatsapp from "../images/wa.webp";
+import fb from "../assets/images/fb.webp";
+import ig from "../assets/images/ig.webp";
+import tiktok from "../assets/images/tt.webp";
+import youtube from "../assets/images/yt.webp";
+import whatsapp from "../assets/images/wa.webp";
 import Image from "next/image";
-import { IconEmail, IconTelephone } from "@/components/svg-icons";
+import { IconEmail, IconTelephone } from "@/components/Svg-icons";
 
 export function Footer() {
   return (
