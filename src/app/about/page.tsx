@@ -1,7 +1,19 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function About() {
   return (
     <div>
-      <div>
+      <div className="flex flex-col items-center">
+        <div>
+          <Image
+            className="rounded shadow-md "
+            src="/myr.jpg"
+            alt="fire dancing"
+            width={200}
+            height={100}
+          />
+        </div>
         <div className="p-4 text-xl">
           <p>
             Born and raised in Andalusia, Spain, I{"'"}ve been dancing
@@ -43,6 +55,9 @@ export default function About() {
             Audience interaction is the highlight of the show — an enchanting
             bellydance performance and an unforgettable event by Myrian.
           </p>
+        </div>
+        <div className=" text-center text-2xl">
+          <Link href={"/book"}>Book Today!</Link>
         </div>
       </div>{" "}
       <div></div>
