@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Aboreto } from "next/font/google";
 import { studioPics } from "@/assets/photos-list";
 import { PicGallery } from "@/components/PicGallery";

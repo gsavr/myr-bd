@@ -32,7 +32,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
                 height={400}
                 onClick={() => setActive(imgelink)}
                 src={imgelink}
-                className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center"
+                className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center shadow"
                 alt="gallery-image"
               />
             </div>
