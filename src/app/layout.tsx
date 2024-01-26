@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aleg.className} flex min-h-screen w-full flex-col`}>
-        <main className="flex min-h-screen flex-col items-center justify-between p-6 !pt-0 md:p-24">
+        <main className="flex min-h-screen flex-col items-center p-6 !pt-0 md:p-24">
           <Header />
           {children}
         </main>

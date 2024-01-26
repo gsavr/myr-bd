@@ -1,5 +1,5 @@
 import Image from "next/image";
-import landingPhoto from "../assets/images/Myrian/3/red.webp";
+import landingPhoto from "../assets/images/photos/3/red.webp";
 import Link from "next/link";
 import { Aboreto, Alegreya_Sans } from "next/font/google";
 

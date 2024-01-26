@@ -1,19 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Aboreto } from "next/font/google";
+
+const abor = Aboreto({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
   return (
     <div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ">
+        {/* header */}
+        <div>
+          <h2 className={`${abor.className} py-5 text-4xl`}>About Me</h2>
+        </div>
+        {/* header pic */}
         <div>
           <Image
             className="rounded shadow-md "
-            src="/myr.jpg"
+            src="/myr2.webp"
             alt="fire dancing"
-            width={200}
+            width={550}
             height={100}
           />
         </div>
+        {/* about me section */}
         <div className="p-4 text-xl">
           <p>
             Born and raised in Andalusia, Spain, I{"'"}ve been dancing
@@ -56,7 +65,7 @@ export default function About() {
             bellydance performance and an unforgettable event by Myrian.
           </p>
         </div>
-        <div className=" text-center text-2xl">
+        <div className="text-center text-2xl hover:underline">
           <Link href={"/book"}>Book Today!</Link>
         </div>
       </div>{" "}
