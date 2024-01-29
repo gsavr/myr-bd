@@ -15,7 +15,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
   const { active, setActive, pics } = props;
   //console.log(active);
 
-  /* next picture in array */
+  /* previous picture in array */
   const setPrevPic = () => {
     if (active == 0) {
       setActive(pics.length - 1);
@@ -24,7 +24,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
     }
   };
 
-  /* previous picture in array */
+  /* next picture in array */
   const setNextPic = () => {
     if (active >= pics.length - 1) {
       setActive(0);

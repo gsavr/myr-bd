@@ -4,8 +4,10 @@ import "./globals.css";
 import { Footer } from "@/layout/footer";
 import { Header } from "@/layout/header";
 
+/* main font */
 const aleg = Alegreya_Sans({ weight: "400", subsets: ["latin"] });
 
+/* SEO */
 export const metadata: Metadata = {
   metadataBase: new URL("https://myrianbellydancing.com"),
   title: "Enchanting Professional Bellydance Performances by Myrian in Austin",
