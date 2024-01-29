@@ -8,8 +8,7 @@ const aleg = Alegreya_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://myrianbellydancing.com"),
-  title:
-    "Myrian - Enchanting Professional Bellydance Performances in Austin, TX",
+  title: "Enchanting Professional Bellydance Performances by Myrian in Austin",
   description:
     "Explore the mesmerizing world of Myrian, a seasoned professional bellydancer with over 15 years of expertise. Serving Austin, TX.",
   applicationName: "Myrian Bellydance",

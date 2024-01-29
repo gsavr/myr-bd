@@ -1,6 +1,7 @@
 "use client";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
+import Link from "next/link";
 import { Key } from "react";
 
 type PicGalleryProps = {
@@ -26,7 +27,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
       <div className="grid grid-cols-5 gap-4">
         {pics.map(
           (imgelink: string | StaticImport, index: Key | null | undefined) => (
-            <div key={index}>
+            <Link key={index} href={"#image"}>
               <Image
                 width={400}
                 height={400}
@@ -35,7 +36,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
                 className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center shadow"
                 alt="Myrian Bellydance Austin"
               />
-            </div>
+            </Link>
           ),
         )}
       </div>

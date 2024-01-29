@@ -1,3 +1,8 @@
+@tailwind base;
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: Asta;
   src: url("../assets/fonts/astaghfirullo.ttf") format("truetype");

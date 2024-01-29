@@ -13,7 +13,8 @@ export default function Photos() {
 
   return (
     <div>
-      <div className="flex flex-col items-center ">
+      <div id="image" className="-mt-24 mb-24"></div>
+      <div className=" flex flex-col items-center">
         {/* header */}
         <div>
           <h2 className={`${abor.className} py-5 text-4xl`}>Gallery</h2>
