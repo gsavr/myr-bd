@@ -19,7 +19,7 @@ export function Footer() {
             </div>
           </div>
           {/*  Social  */}
-          <div className="!mt-5 flex items-center space-x-8 px-0 pb-4 md:w-1/3 md:pb-0">
+          <div className="!mt-5 flex items-center px-0 pb-4 sm:space-x-8 md:w-1/3 md:space-x-5 md:pb-0 lg:space-x-8">
             <div>
               <a
                 href="https://www.instagram.com/tripsandlips/"
