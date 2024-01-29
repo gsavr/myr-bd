@@ -7,8 +7,8 @@ const aleg = Alegreya_Sans({ weight: "300", subsets: ["latin"] });
 
 export default function Book() {
   return (
-    <div className="h-screen w-full">
-      <div className="flex h-screen w-full flex-col items-center">
+    <div className="w-full overflow-hidden">
+      <div className="flex w-full flex-col items-center ">
         <div>
           <h2 className={`${abor.className} py-5 text-4xl`}>Book now</h2>
         </div>
@@ -50,11 +50,11 @@ export default function Book() {
               myrianbellydancing@gmail.com
             </Link>
           </p>
-          <p className="py-6 text-xl underline md:pb-0 md:pt-6">
+          <p className="py-6 text-xl underline md:pt-6 lg:pb-0">
             <Link href={"/reviews"}>Client Reviews</Link>
           </p>
         </div>
-        <div className="h-screen w-full">
+        <div className="h-[550px] w-full lg:h-[700px]">
           <CalendlyEmbed />
         </div>
         <div></div>

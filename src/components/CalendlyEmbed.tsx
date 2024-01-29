@@ -14,11 +14,10 @@ export const CalendlyEmbed: React.FC = () => {
 
   return (
     <div
-      className="calendly-inline-widget h-screen w-full"
+      className="calendly-inline-widget h-full w-full"
       data-url={
         "https://www.calendly.com/myrianbellydancing?hide_gdpr_banner=1"
       }
-      style={{ minHeight: "100%", width: "100%" }}
     ></div>
   );
 };
