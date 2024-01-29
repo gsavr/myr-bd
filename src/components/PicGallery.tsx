@@ -3,6 +3,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import Link from "next/link";
 import { Key } from "react";
+import { IconBxsLeftArrow, IconBxsRightArrow } from "./SvgIcons";
 
 type PicGalleryProps = {
   active: any;
@@ -36,7 +37,9 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
     <div className="grid gap-4">
       <div className="flex w-full items-center justify-center ">
         {/* main image displayed */}
-        <button onClick={setPrevPic}>PREV</button>
+        <button onClick={setPrevPic}>
+          <IconBxsLeftArrow />
+        </button>
         <Image
           className="h-auto w-auto max-w-full cursor-pointer rounded object-cover object-center shadow-md md:h-[680px]"
           onClick={setNextPic}
@@ -45,7 +48,9 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
           src={pics[active]}
           alt="Myrian Bellydance Austin"
         />{" "}
-        <button onClick={setNextPic}>NEXT</button>
+        <button onClick={setNextPic}>
+          <IconBxsRightArrow />
+        </button>
       </div>
 
       <div className="grid grid-cols-5 gap-4">
