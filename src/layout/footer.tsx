@@ -4,7 +4,8 @@ import tiktok from "../assets/images/tt.webp";
 import youtube from "../assets/images/yt.webp";
 import whatsapp from "../assets/images/wa.webp";
 import Image from "next/image";
-import { IconEmail, IconTelephone } from "../components/SvgIcons";
+import { IconChatbox, IconEmail, IconTelephone } from "../components/SvgIcons";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -15,31 +16,31 @@ export function Footer() {
           {/* Registered */}
           <div className=" mt-5 text-sm md:w-1/3 md:text-center md:text-base">
             <div className="flex space-x-3">
-              <span className="w-full">&#174; 2024 Myrian Bellydancing</span>
+              <span className="w-full">2024, Myrian Bellydancing &#174;</span>
             </div>
           </div>
           {/*  Social  */}
-          <div className="!mt-5 flex items-center px-0 pb-4 sm:space-x-8 md:w-1/3 md:space-x-5 md:pb-0 lg:space-x-8">
+          <div className="!mt-5 flex items-center space-x-8 px-0 pb-4 md:w-1/3 md:space-x-5 md:pb-0 lg:space-x-8">
             <div>
-              <a
+              <Link
                 href="https://www.instagram.com/tripsandlips/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Image src={ig} alt="Instagram" className="h-[35px] w-[35px]" />
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://www.facebook.com/miryam.sanchezroldan"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Image src={fb} alt="facebook" className="h-[35px] w-[35px]" />
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://www.youtube.com/@MyrianSanchez-jz1he"
                 target="_blank"
                 rel="noreferrer"
@@ -49,10 +50,10 @@ export function Footer() {
                   alt="YouTube"
                   className="h-[35px] w-[35px]"
                 />
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://www.tiktok.com/@bellymyrian?_t=8jCD379pRDr&_r=1"
                 target="_blank"
                 rel="noreferrer"
@@ -62,10 +63,10 @@ export function Footer() {
                   alt="TikTok"
                   className="h-[35px] w-[35px]"
                 />
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="https://wa.me/15129986317"
                 target="_blank"
                 rel="noreferrer"
@@ -75,24 +76,28 @@ export function Footer() {
                   alt="WhatsApp"
                   className="h-[35px] w-[35px]"
                 />
-              </a>
+              </Link>
             </div>
           </div>
           {/* Contact */}
           <div className="-pt-3 mt-5 flex flex-col items-center pb-5 text-lg md:w-1/3 md:items-start md:pt-10 md:text-base lg:text-lg">
-            <div className="flex space-x-3">
-              <a href="tel:15129986317" className="flex items-center">
+            <div className="flex items-center space-x-3">
+              <Link href="tel:+15129986317" className="flex items-center">
                 <IconTelephone /> <span className="pl-1">+1 512 998 6317</span>
-              </a>
+              </Link>{" "}
+              <Link className="pt-0" href="sms:+15129986317">
+                {" "}
+                <IconChatbox />
+              </Link>
             </div>
             <div className="flex space-x-3">
-              <a
+              <Link
                 href="mailto:myrianbellydancing@gmail.com"
                 className="flex items-center"
               >
                 <IconEmail />{" "}
                 <span className="pl-1"> myrianbellydancing@gmail.com</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

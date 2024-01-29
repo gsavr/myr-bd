@@ -76,7 +76,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Serving Austin, TX
+            <h2>Serving Austin, San Antonio, Houston, Dallas</h2>
           </p>
         </Link>
       </nav>
