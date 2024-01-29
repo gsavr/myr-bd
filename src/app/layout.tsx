@@ -7,15 +7,29 @@ import { Header } from "@/layout/header";
 const aleg = Alegreya_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://myrianbellydancing.com"),
   title:
     "Myrian - Enchanting Professional Bellydance Performances in Austin, TX",
   description:
     "Explore the mesmerizing world of Myrian, a seasoned professional bellydancer with over 15 years of expertise. Serving Austin, TX.",
+  applicationName: "Myrian Bellydance",
+  authors: [{ name: "Giorgio Savron", url: "https://giorgiosavron.com" }],
+  publisher: "Giorgio Savron",
+  generator: "Next.js",
   keywords:
-    "belly, dancing, bellydancing, bellydance, Myrian, Sanchez, Austin, TX",
+    "belly, dancing,dance, professional, bellydancing, bellydance, Myrian, Sanchez, Austin, TX, cultural dance",
+  referrer: "origin",
+  abstract: "Myrian Bellydance - Professional Performances in Austin, TX",
+  viewport: "width=device-width, initial-scale=1",
+  creator: "Myrian Sanchez",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://myrianbellydancing.com",
+  },
   icons: "https://www.myrianbellydancing.com/favicon.ico",
 
   openGraph: {
+    type: "website",
     url: "https://myrianbellydancing.com/",
     title: "Austin Bellydance Performances | Myrian",
     description: "Professional bellydance artist with cultural influences.",
@@ -32,6 +46,16 @@ export const metadata: Metadata = {
     locale: "Austin",
     phoneNumbers: "15129986317",
   },
+  category: "Arts & Entertainment",
+  classification: "Professional Bellydance",
+  appleWebApp: {
+    capable: true,
+    title: "Myrian Bellydance",
+    statusBarStyle: "black-translucent",
+  },
+  formatDetection: {
+    telephone: true,
+  },
   other: { facebook: "6370779839619425" },
 };
 
@@ -42,12 +66,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${aleg.className} flex min-h-screen w-full flex-col`}>
+      <body
+        className={`${aleg.className} flex min-h-screen w-full flex-col overflow-x-hidden`}
+      >
         <main className="flex min-h-screen flex-col items-center p-6 !pt-0 md:p-24">
           <Header />
           {children}
         </main>
         <Footer />
+        <p className="text-center text-sm">&copy; Giorgio Savron Development</p>
       </body>
     </html>
   );

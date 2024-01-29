@@ -15,7 +15,7 @@ export function Footer() {
           {/* Copy */}
           <div className="text mt-5 text-sm md:text-base">
             <div className="flex space-x-3">
-              <span>&copy; 2024 Myrian Bellydancing</span>
+              <span>&#174; 2024 Myrian Bellydancing</span>
             </div>
           </div>
           {/*  Social  */}
