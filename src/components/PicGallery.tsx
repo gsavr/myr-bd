@@ -3,11 +3,11 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import { Key } from "react";
 
-interface PicGalleryProps {
+type PicGalleryProps = {
   active: any;
   setActive: any;
   pics: any;
-}
+};
 
 export const PicGallery: React.FC<PicGalleryProps> = (props) => {
   const { active, setActive, pics } = props;
@@ -20,7 +20,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
           width={400}
           height={400}
           src={active}
-          alt="gallery picture"
+          alt="Myrian Bellydance Austin"
         />
       </div>
       <div className="grid grid-cols-5 gap-4">
@@ -33,7 +33,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
                 onClick={() => setActive(imgelink)}
                 src={imgelink}
                 className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center shadow"
-                alt="gallery-image"
+                alt="Myrian Bellydance Austin"
               />
             </div>
           ),

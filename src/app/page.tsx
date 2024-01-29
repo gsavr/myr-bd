@@ -27,7 +27,6 @@ export default function Home() {
         of Myrian{"'"}s mesmerizing performances – a celebration of dance,
         culture, and pure entertainment.
       </div>
-
       {/* Landing links */}
       <nav
         style={abor.style}
