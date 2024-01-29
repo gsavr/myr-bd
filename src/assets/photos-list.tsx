@@ -18,6 +18,9 @@ import myr from "./images/photos/3/myr.webp";
 import outdoor from "./images/photos/3/outdoor.webp";
 import red from "./images/photos/3/red.webp";
 import shh from "./images/photos/3/shhhh.webp";
+import beach from "./images/photos/3/beach.webp";
+import fire2 from "./images/photos/3/fire2.webp";
+import redGreen from "./images/photos/3/red_green.webp";
 
 //audience pics
 import amy1 from "./images/photos/audience/amy.webp";
@@ -46,6 +49,9 @@ export const studioPics = [
   outdoor,
   red,
   shh,
+  beach,
+  fire2,
+  redGreen,
   amy1,
   amy2,
   lissete,
