@@ -10,9 +10,9 @@ const aleg = Alegreya_Sans({ weight: "400", subsets: ["latin"] });
 /* SEO */
 export const metadata: Metadata = {
   metadataBase: new URL("https://myrianbellydancing.com"),
-  title: "Enchanting Bellydance Performances by Myrian in Austin & Dallas",
+  title: "Enchanting Bellydance Performances by Myrian in Austin & Houston",
   description:
-    "Explore the mesmerizing world of Myrian, a seasoned professional bellydancer with over 15 years of expertise. Serving Austin, TX.",
+    "Explore the mesmerizing world of Myrian, a seasoned professional bellydancer with over 15 years of expertise. Serving Austin, San Antonio, Houston, Dallas.",
   applicationName: "Myrian Bellydance",
   authors: [{ name: "Giorgio Savron", url: "https://giorgiosavron.com" }],
   publisher: "Giorgio Savron",
