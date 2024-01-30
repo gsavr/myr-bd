@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   publisher: "Giorgio Savron",
   generator: "Next.js",
   keywords:
-    "belly, dancing, belly dancing, belly dance, dance, professional, fire dancer, bellydancing, bellydance, Myrian, Sanchez, Austin, TX, cultural dance",
+    "belly, dancing, belly dancing, belly dance, dance, professional, fire dancer, bellydancing, bellydance, Myrian, Sanchez, Austin, San Antonio, Houston, Dallas, TX, cultural dance",
   referrer: "origin",
   abstract: "Myrian Bellydance - Professional Performances in Austin, TX",
   viewport: "width=device-width, initial-scale=1",
