@@ -5,19 +5,15 @@ const YOUTUBE_PLAYLIST_ITEMS_API =
 
 let data: any;
 
-const fetchData = async () => {
-  try {
-    const res = await fetch(
-      `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=30&playlistId=UUF4Sp7CkKg3MZ9TCAtul3NQ&key=${process.env.YOUTUBE_API_KEY}`,
-    );
-    data = await res.json();
-    return data;
-  } catch (error) {
-    console.error("Error fetching YouTube data:", error);
-    // Handle error
-  }
-};
-fetchData();
+try {
+  const res = await fetch(
+    `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=30&playlistId=UUF4Sp7CkKg3MZ9TCAtul3NQ&key=${process.env.YOUTUBE_API_KEY}`,
+  );
+  data = await res.json();
+} catch (error) {
+  console.error("Error fetching YouTube data:", error);
+  // Handle error
+}
 
 /* video player with all videos up to 30 of latest - from youtube channel */
 export const VideoPlayer: React.FC = () => {
