@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Aboreto } from "next/font/google";
+import myrPic from "@/assets/images/photos/myr2.webp";
 
 const abor = Aboreto({ weight: "400", subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function About() {
         <div>
           <Image
             className="rounded shadow-md "
-            src="/myr2.webp"
+            src={myrPic}
             alt="fire dancing"
             width={550}
             height={100}

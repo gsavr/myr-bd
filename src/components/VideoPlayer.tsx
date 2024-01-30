@@ -4,6 +4,7 @@ const YOUTUBE_PLAYLIST_ITEMS_API =
   "https://www.googleapis.com/youtube/v3/playlistItems";
 
 let data: any;
+let error = "";
 
 try {
   const res = await fetch(
@@ -13,12 +14,14 @@ try {
 } catch (error) {
   console.error("Error fetching YouTube data:", error);
   // Handle error
+  error = "Error found";
 }
 
 /* video player with all videos up to 30 of latest - from youtube channel */
 export const VideoPlayer: React.FC = () => {
   return (
     <>
+      {error === "Error found" && <div>Please Reload Page</div>}
       {data.items.map((item: any) => {
         //console.log(item);
         const { id, snippet = {} } = item;
@@ -34,7 +37,7 @@ export const VideoPlayer: React.FC = () => {
             allowFullScreen
           ></iframe>
         );
-      })}{" "}
+      })}
     </>
   );
 };
