@@ -13,11 +13,9 @@ export default function Videos() {
         {/* All youtube videos */}
         <VideoPlayer />
 
-        <div className={`${abor.className} -pb-11 pt-8`}>
+        <div className={`${abor.className}  pt-8 `}>
           Find all my videos at the links below
         </div>
-
-        <div></div>
       </div>
     </div>
   );

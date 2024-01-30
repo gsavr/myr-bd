@@ -70,7 +70,7 @@ export default function RootLayout({
       <body
         className={`${aleg.className} flex min-h-screen w-full flex-col overflow-x-hidden`}
       >
-        <main className="flex min-h-screen flex-col items-center overflow-x-hidden p-6 !pt-0 md:p-24">
+        <main className="flex min-h-screen flex-col items-center overflow-x-hidden p-6 !pt-0 md:p-24 md:pb-10">
           <Header />
           {children}
         </main>

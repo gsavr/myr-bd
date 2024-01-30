@@ -66,7 +66,9 @@ export default function About() {
           </p>
         </div>
         <div className="text-center text-2xl hover:underline">
-          <Link href={"/book"}>Book Today!</Link>
+          <Link className="underline" href={"/book"}>
+            Book Today!
+          </Link>
         </div>
       </div>{" "}
       <div></div>
