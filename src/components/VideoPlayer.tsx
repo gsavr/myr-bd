@@ -27,7 +27,7 @@ export const VideoPlayer: React.FC = () => {
         return (
           <iframe
             key={id}
-            className="h-[255px] w-full rounded-lg py-5 shadow-lg md:h-[420px] md:w-4/5 lg:w-2/3"
+            className="h-[255px] w-full rounded-lg py-5 shadow-lg md:h-[420px] lg:w-2/3"
             src={`https://www.youtube.com/embed/${videoId}`}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
