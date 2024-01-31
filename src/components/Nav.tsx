@@ -22,7 +22,7 @@ export function Nav() {
       </Link>
 
       <Link href="/book" className="nav-link">
-        <h2 className={`text-xs md:text-base`}>Book </h2>
+        <h2 className={`text-xs md:text-base`}>Hire Me </h2>
       </Link>
     </nav>
   );
