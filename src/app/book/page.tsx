@@ -48,7 +48,7 @@ export default function Book() {
             </Link>
           </p>
           <p className="py-6 text-xl underline md:pt-6 lg:pb-0">
-            <Link href={"/reviews"}>Client Reviews</Link>
+            <Link href={"/reviews"}>See my Client Reviews!</Link>
           </p>
         </div>
         <div className="h-[550px] w-full lg:h-[700px]">
