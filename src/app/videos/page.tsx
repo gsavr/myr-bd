@@ -1,7 +1,5 @@
-import { Aboreto } from "next/font/google";
 import { VideoPlayer } from "@/components/VideoPlayer";
-
-const abor = Aboreto({ weight: "400", subsets: ["latin"] });
+import { abor } from "@/assets/fonts/fonts";
 
 export default function Videos() {
   return (

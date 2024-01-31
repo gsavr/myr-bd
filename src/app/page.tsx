@@ -1,10 +1,7 @@
 import Image from "next/image";
 import landingPhoto from "../assets/images/photos/3/red.webp";
 import Link from "next/link";
-import { Aboreto, Alegreya_Sans } from "next/font/google";
-
-const aleg = Alegreya_Sans({ weight: "300", subsets: ["latin"] });
-const abor = Aboreto({ weight: "400", subsets: ["latin"] });
+import { alegThin, abor } from "@/assets/fonts/fonts";
 
 export default function Home() {
   return (
@@ -19,7 +16,7 @@ export default function Home() {
         />
       </div>
       {/* intro */}
-      <div style={aleg.style} className="pb-4 pt-8 text-lg lg:text-2xl">
+      <div style={alegThin.style} className="pb-4 pt-8 text-lg lg:text-2xl">
         Welcome to the captivating world of Myrian, where professional
         bellydance artistry meets over 15 years of expertise. Immerse yourself
         in the rhythmic fusion of flamenco roots, diverse international dance

@@ -1,6 +1,4 @@
-import { Aboreto } from "next/font/google";
-
-const abor = Aboreto({ weight: "400", subsets: ["latin"] });
+import { abor } from "@/assets/fonts/fonts";
 
 export default function Reviews() {
   return (

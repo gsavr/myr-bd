@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Alegreya_Sans } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/layout/footer";
 import { Header } from "@/layout/header";
+import { aleg } from "@/assets/fonts/fonts";
 
-/* main font */
-const aleg = Alegreya_Sans({ weight: "400", subsets: ["latin"] });
+/* main font imported from @assets/fonts*/
 
 /* SEO */
 export const metadata: Metadata = {

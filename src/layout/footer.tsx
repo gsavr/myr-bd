@@ -1,11 +1,11 @@
+import Link from "next/link";
+import Image from "next/image";
 import fb from "../assets/images/fb.webp";
 import ig from "../assets/images/ig.webp";
 import tiktok from "../assets/images/tt.webp";
 import youtube from "../assets/images/yt.webp";
 import whatsapp from "../assets/images/wa.webp";
-import Image from "next/image";
 import { IconChatbox, IconEmail, IconTelephone } from "../components/SvgIcons";
-import Link from "next/link";
 
 export function Footer() {
   return (

@@ -1,8 +1,6 @@
-import { Charmonman } from "next/font/google";
-import { Nav } from "@/components/Nav";
 import Link from "next/link";
-
-const aleg = Charmonman({ weight: "400", subsets: ["latin"] });
+import { charm } from "@/assets/fonts/fonts";
+import { Nav } from "@/components/Nav";
 
 export function Header() {
   return (
@@ -11,13 +9,13 @@ export function Header() {
         <Link className="mt-11 text-center md:-mb-3" href="/">
           <h1 className="font-arabic"> Myrian Bellydancing</h1>
           <h2
-            className={`${aleg.className} -mt-3 mb-2 hidden text-xl md:block `}
+            className={`${charm.className} -mt-3 mb-2 hidden text-xl md:block `}
           >
             Experience Elegant and Enchanting Bellydance Performances in Austin,
             TX
           </h2>
           <h2
-            className={`${aleg.className} -mt-3 mb-2 block text-xl md:hidden `}
+            className={`${charm.className} -mt-3 mb-2 block text-xl md:hidden `}
           >
             Austin, TX
           </h2>

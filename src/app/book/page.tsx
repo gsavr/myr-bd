@@ -1,9 +1,6 @@
 import Link from "next/link";
-import { Aboreto, Alegreya_Sans } from "next/font/google";
 import { CalendlyEmbed } from "@/components/CalendlyEmbed";
-
-const abor = Aboreto({ weight: "400", subsets: ["latin"] });
-const aleg = Alegreya_Sans({ weight: "300", subsets: ["latin"] });
+import { alegThin, abor } from "@/assets/fonts/fonts";
 
 export default function Book() {
   return (
@@ -12,7 +9,7 @@ export default function Book() {
         <div>
           <h2 className={`${abor.className} py-5 text-4xl`}>Book now</h2>
         </div>
-        <div className={`${aleg.className} text-lg`}>
+        <div className={`${alegThin.className} text-lg`}>
           <p>
             Elevate your party with mesmerizing belly dance! Dance to Arabic
             music or enjoy a captivating performance by me. Available for public
