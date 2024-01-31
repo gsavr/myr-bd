@@ -3,6 +3,17 @@ import landingPhoto from "../assets/images/photos/3/red.webp";
 import Link from "next/link";
 import { alegThin, abor } from "@/assets/fonts/fonts";
 
+const bottomLinks = [
+  { to: "/about", main: "About", second: "More about me." },
+  { to: "/photos", main: "Photos", second: "Browse my Gallery." },
+  { to: "videos", main: "Videos", second: "Watch me in action." },
+  {
+    to: "/book",
+    main: "Hire me",
+    second: <h3>Serving Austin, San Antonio, Houston, Dallas</h3>,
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -29,53 +40,21 @@ export default function Home() {
         style={abor.style}
         className="mb-32 grid pt-2 text-center md:grid-cols-4 lg:mb-0 lg:w-full lg:max-w-5xl lg:text-left"
       >
-        <Link href="/about" className="main-link group">
-          <h2 className={`h2`}>
-            About{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            More about me.
-          </p>
-        </Link>
-
-        <Link href="/photos" className="main-link group">
-          <h2 className={`h2`}>
-            Photos{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Browse my Gallery.
-          </p>
-        </Link>
-
-        <Link href="/videos" className="main-link group">
-          <h2 className={`h2`}>
-            Videos{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Watch me in action.
-          </p>
-        </Link>
-
-        <Link href="/book" className="main-link group">
-          <h2 className={`h2`}>
-            Hire me{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            <h2>Serving Austin, San Antonio, Houston, Dallas</h2>
-          </p>
-        </Link>
+        {bottomLinks.map((link) => {
+          return (
+            <Link key={link.main} href={link.to} className="main-link group">
+              <h2 className={`h2`}>
+                {link.main}{" "}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+              </h2>
+              <span className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                {link.second}
+              </span>
+            </Link>
+          );
+        })}
       </nav>
     </>
   );
