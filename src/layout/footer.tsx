@@ -99,8 +99,12 @@ export function Footer() {
                 <span className="pl-1"> myrianbellydancing@gmail.com</span>
               </Link>
             </div>
+            <span className="pt-1 text-sm">
+              Serving Austin, San Antonio, Houston, Dallas
+            </span>
           </div>
         </div>
+
         {/* copy */}
         <p className="pt-2 text-center text-xs md:pt-0">
           &copy; Giorgio Savron Development
