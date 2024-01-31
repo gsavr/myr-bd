@@ -6,8 +6,7 @@ const abor = Aboreto({ weight: "400", subsets: ["latin"] });
 export function Nav() {
   return (
     <nav
-      style={abor.style}
-      className="grid grid-cols-4 pt-2 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:text-center"
+      className={`${abor.className} grid grid-cols-4 pt-2 text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:text-center`}
     >
       <Link href="/about" className="nav-link">
         <h2 className={`text-xs md:text-base`}>About </h2>

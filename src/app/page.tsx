@@ -12,7 +12,7 @@ export default function Home() {
       <div className={``}>
         {/* Hero */}
         <Image
-          className="relative rounded-sm drop-shadow-md dark:brightness-50 dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+          className="relative rounded-sm drop-shadow-md dark:brightness-90 dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
           src={landingPhoto}
           alt="Myrian"
           priority

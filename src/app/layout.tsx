@@ -27,8 +27,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://myrianbellydancing.com",
   },
-  icons: "https://www.myrianbellydancing.com/favicon.ico",
-
+  icons: [
+    { rel: "icon", url: "/favicon.ico" },
+    { rel: "apple-touch-icon", url: "/apple-touch-icon.png", sizes: "180x180" },
+    {
+      rel: "icon",
+      url: "/logo192.png",
+      sizes: "192x192",
+      type: "image/png",
+    },
+    {
+      rel: "icon",
+      url: "/logo512.png",
+      sizes: "512x512",
+      type: "image/png",
+    },
+    {
+      rel: "msapplication-square150x150logo",
+      url: "/mstile-150x150.png",
+      type: "image/png",
+    },
+  ],
   openGraph: {
     type: "website",
     url: "https://myrianbellydancing.com/",

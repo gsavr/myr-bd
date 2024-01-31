@@ -41,7 +41,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
           <IconBxsLeftArrow />
         </button>
         <Image
-          className="h-auto w-auto max-w-full cursor-pointer rounded object-cover object-center shadow-md md:h-[680px]"
+          className="h-auto w-auto max-w-full cursor-pointer rounded object-cover object-center shadow-md md:h-[680px] dark:brightness-90"
           onClick={setNextPic}
           width={400}
           height={400}
@@ -63,7 +63,7 @@ export const PicGallery: React.FC<PicGalleryProps> = (props) => {
                 height={400}
                 onClick={() => setActive(Number(index))}
                 src={imgelink}
-                className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center shadow"
+                className="h-20 max-w-full cursor-pointer rounded-lg object-cover object-center shadow dark:brightness-90"
                 alt="Myrian Bellydance Austin"
               />
             </Link>

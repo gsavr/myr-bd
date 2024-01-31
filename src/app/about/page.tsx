@@ -16,7 +16,7 @@ export default function About() {
         {/* header pic */}
         <div>
           <Image
-            className="rounded shadow-md "
+            className="rounded shadow-md dark:brightness-90"
             src={myrPic}
             alt="fire dancing"
             width={550}
