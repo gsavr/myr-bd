@@ -5,6 +5,7 @@ import ig from "../assets/images/ig.webp";
 import tiktok from "../assets/images/tt.webp";
 import youtube from "../assets/images/yt.webp";
 import whatsapp from "../assets/images/wa.webp";
+import myr from "@/assets/images/myr.png";
 import { IconChatbox, IconEmail, IconTelephone } from "../components/SvgIcons";
 
 export function Footer() {
@@ -16,7 +17,13 @@ export function Footer() {
           {/* Registered */}
           <div className=" mt-5 text-sm md:w-1/3 md:text-center md:text-base">
             <div className="flex space-x-3">
-              <span className="w-full">2024, Myrian Bellydancing &#174;</span>
+              <Link href={"/"} className="flex items-center md:pl-3 lg:pl-0">
+                <Image src={myr} alt="logo" width={30}></Image>
+
+                <span className="w-full pl-4">
+                  2024, Myrian Bellydancing &#174;
+                </span>
+              </Link>
             </div>
           </div>
           {/*  Social  */}
