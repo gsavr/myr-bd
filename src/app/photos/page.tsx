@@ -2,6 +2,12 @@
 import { abor } from "@/assets/fonts/fonts";
 import cloudinary from "cloudinary";
 import { CloudinaryGallery } from "@/components/CloudinaryGallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Photo Gallery | Myrian Bellydancing Austin",
+  description: "Browse my gallery of professional and performance photos",
+};
 
 type SearchResults = {
   publid_id: string;

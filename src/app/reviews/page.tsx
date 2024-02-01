@@ -1,6 +1,12 @@
 import { abor } from "@/assets/fonts/fonts";
 import { reviews } from "@/assets/reviews-list";
 import { IconStar } from "@/components/SvgIcons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Client Reviews | Myrian Bellydancing Austin",
+  description: "See my client reviews from Gigsalad",
+};
 
 export default function Reviews() {
   return (

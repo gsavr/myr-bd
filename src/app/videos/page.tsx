@@ -1,5 +1,11 @@
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { abor } from "@/assets/fonts/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Videos | Myrian Bellydancing Austin",
+  description: "Browse videos of me performing belly dance",
+};
 
 export default function Videos() {
   return (

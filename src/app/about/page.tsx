@@ -2,6 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Aboreto } from "next/font/google";
 import myrPic from "@/assets/images/photos/myr2.webp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me | Myrian Bellydancing Austin",
+  description:
+    "Discover more about my belly dancing journey, from Spain to Astin",
+};
 
 const abor = Aboreto({ weight: "400", subsets: ["latin"] });
 

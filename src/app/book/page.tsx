@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { CalendlyEmbed } from "@/components/CalendlyEmbed";
 import { alegThin, abor } from "@/assets/fonts/fonts";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Book A Performance | Myrian Bellydancing Austin",
+  description: "Book a professinal belly dance performance",
+};
 
 export default function Book() {
   return (
