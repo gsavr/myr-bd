@@ -20,7 +20,7 @@ export default function Reviews() {
             return (
               <div
                 key={review.date}
-                className=" my-3 rounded bg-[#E9EBF1] p-3 text-left shadow-inner"
+                className=" my-3 rounded bg-[#E9EBF1] p-3 text-left shadow-inner dark:bg-[#222526]"
               >
                 <div className="flex items-center text-sm">
                   Client name: {review.reviewer}
