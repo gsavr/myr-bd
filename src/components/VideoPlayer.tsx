@@ -1,14 +1,14 @@
 //api call to YouTube channel ID - UCF4Sp7CkKg3MZ9TCAtul3NQ; playlist ID - UUF4Sp7CkKg3MZ9TCAtul3NQ
 
-const YOUTUBE_PLAYLIST_ITEMS_API =
-  "https://www.googleapis.com/youtube/v3/playlistItems";
+//const YOUTUBE_PLAYLIST_ITEMS_API =
+// "https://www.googleapis.com/youtube/v3/playlistItems";
 
 let data: any;
 let error = "";
 
 try {
   const res = await fetch(
-    `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=30&playlistId=UUF4Sp7CkKg3MZ9TCAtul3NQ&key=${process.env.YOUTUBE_API_KEY}`,
+    `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=30&playlistId=UUF4Sp7CkKg3MZ9TCAtul3NQ&key=${process.env.YOUTUBE_API_KEY}`,
   );
   data = await res.json();
 } catch (error) {
@@ -27,6 +27,7 @@ export const VideoPlayer: React.FC = () => {
         const { id, snippet = {} } = item;
         const { resourceId } = snippet;
         const { videoId } = resourceId;
+        console.log(snippet);
         return (
           <iframe
             key={id}
@@ -43,3 +44,4 @@ export const VideoPlayer: React.FC = () => {
 };
 
 ///
+//[YOUR_API_KEY]
