@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleAnalyticsTracking } from "@/components/GoogleAnalytics";
 import { Footer } from "@/layout/footer";
 import { Header } from "@/layout/header";
 import { aleg } from "@/assets/fonts/fonts";
@@ -76,17 +77,6 @@ export const metadata: Metadata = {
     telephone: true,
   },
   other: {
-    googleTagManager: `
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16453682451"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'AW-16453682451');
-  </script>
-`,
     facebook: "6370779839619425",
   },
 };
@@ -98,6 +88,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalyticsTracking />
       <body
         className={`${aleg.className} flex min-h-screen w-full flex-col overflow-x-hidden`}
       >
