@@ -75,7 +75,20 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: true,
   },
-  other: { facebook: "6370779839619425" },
+  other: {
+    googleTagManager: `
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16453682451"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'AW-16453682451');
+  </script>
+`,
+    facebook: "6370779839619425",
+  },
 };
 
 export default function RootLayout({
