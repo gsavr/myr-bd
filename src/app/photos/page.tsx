@@ -1,4 +1,3 @@
-//"use client";
 import { abor } from "@/assets/fonts/fonts";
 import cloudinary from "cloudinary";
 import { CloudinaryGallery } from "@/components/CloudinaryGallery";
@@ -12,6 +11,8 @@ export const metadata: Metadata = {
 type SearchResults = {
   publid_id: string;
 };
+
+export const revalidate = 3600;
 
 export default async function Photos() {
   const results = (await cloudinary.v2.search
