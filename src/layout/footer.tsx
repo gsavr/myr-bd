@@ -111,6 +111,8 @@ export function Footer() {
       <Link
         href={"https://www.giorgiosavron.com"}
         aria-label="Developer Website"
+        target="_blank"
+        rel="noreferrer"
       >
         <p className="pt-2 text-center text-xs md:pt-0">
           &copy; Giorgio Savron Development
