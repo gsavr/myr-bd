@@ -9,6 +9,7 @@ let error = "";
 try {
   const res = await fetch(
     `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=30&playlistId=UUF4Sp7CkKg3MZ9TCAtul3NQ&key=${process.env.YOUTUBE_API_KEY}`,
+    { next: { revalidate: 3600 } },
   );
   data = await res.json();
 } catch (error) {
