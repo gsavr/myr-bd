@@ -58,7 +58,12 @@ export function Footer() {
           {socials.map(({ href, src, alt }) => {
             return (
               <div key={href}>
-                <Link href={href} target="_blank" rel="noreferrer">
+                <Link
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={alt}
+                >
                   <Image src={src} alt={alt} className="h-[35px] w-[35px]" />
                 </Link>
               </div>
@@ -69,10 +74,18 @@ export function Footer() {
         <div className="-pt-3 mt-5 flex flex-col items-center justify-center pb-5 text-lg md:w-4/12  md:pt-10 md:text-base lg:text-lg">
           <div className="flex flex-col md:items-start">
             <div className="flex items-center justify-center space-x-3">
-              <Link href="tel:+15129986317" className="flex items-center">
+              <Link
+                href="tel:+15129986317"
+                className="flex items-center"
+                aria-label="call telephone"
+              >
                 <IconTelephone /> <span className="pl-1">+1 512 998 6317</span>
               </Link>{" "}
-              <Link className="pt-0" href="sms:+15129986317">
+              <Link
+                className="pt-0"
+                href="sms:+15129986317"
+                aria-label="send text message"
+              >
                 {" "}
                 <IconChatbox />
               </Link>
@@ -81,6 +94,7 @@ export function Footer() {
               <Link
                 href="mailto:myrianbellydancing@gmail.com"
                 className="flex items-center"
+                aria-label="send email"
               >
                 <IconEmail />{" "}
                 <span className="pl-1"> myrianbellydancing@gmail.com</span>
@@ -94,9 +108,14 @@ export function Footer() {
       </div>
 
       {/* copy */}
-      <p className="pt-2 text-center text-xs md:pt-0">
-        &copy; Giorgio Savron Development
-      </p>
+      <Link
+        href={"https://www.giorgiosavron.com"}
+        aria-label="Developer Website"
+      >
+        <p className="pt-2 text-center text-xs md:pt-0">
+          &copy; Giorgio Savron Development
+        </p>
+      </Link>
     </footer>
   );
 }
