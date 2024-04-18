@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description: "Browse videos of me performing belly dance",
 };
 
+export const revalidate = 3600;
+
 export default function Videos() {
   return (
     <div className="w-full">
