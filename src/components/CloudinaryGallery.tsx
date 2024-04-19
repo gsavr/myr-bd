@@ -15,7 +15,7 @@ export const CloudinaryGallery: React.FC<CloudinaryImageProps> = (props) => {
   const {
     results: { resources },
   } = props;
-  const [active, setActive] = useState(resources.length - 1 || 0);
+  const [active, setActive] = useState(0);
 
   /* previous picture in array */
   const setPrevPic = () => {
