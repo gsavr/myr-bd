@@ -1,25 +1,14 @@
 //api call to YouTube channel ID - UCF4Sp7CkKg3MZ9TCAtul3NQ; playlist ID - UUF4Sp7CkKg3MZ9TCAtul3NQ
 
-const YOUTUBE_PLAYLIST_ITEMS_API =
-  "https://youtube.googleapis.com/youtube/v3/playlistItems";
-
-let data: any;
-let error = "";
-
-try {
-  const res = await fetch(
-    `${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&maxResults=30&playlistId=UUF4Sp7CkKg3MZ9TCAtul3NQ&key=${process.env.YOUTUBE_API_KEY}`,
-    { next: { revalidate: 3600 } },
-  );
-  data = await res.json();
-} catch (error) {
-  console.error("Error fetching YouTube data:", error);
-  // Handle error
-  error = "Error found";
-}
+type VideoPlayerProps = {
+  data: any;
+  error: string;
+};
 
 /* video player with all videos up to 30 of latest - from youtube channel */
-export const VideoPlayer: React.FC = () => {
+export const VideoPlayer: React.FC<VideoPlayerProps> = (props) => {
+  const { data, error } = props;
+
   return (
     <>
       {error === "Error found" && <div>Please Reload Page</div>}
@@ -28,7 +17,7 @@ export const VideoPlayer: React.FC = () => {
         const { id, snippet = {} } = item;
         const { resourceId } = snippet;
         const { videoId } = resourceId;
-        console.log(snippet);
+        //console.log(snippet);
         return (
           <iframe
             key={id}

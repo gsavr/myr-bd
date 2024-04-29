@@ -7,9 +7,22 @@ export const metadata: Metadata = {
   description: "Browse videos of me performing belly dance",
 };
 
-export const revalidate = 3600;
+let data: any;
+let error = "";
 
-export default function Videos() {
+export default async function Videos() {
+  try {
+    const res = await fetch(
+      `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=30&playlistId=UUF4Sp7CkKg3MZ9TCAtul3NQ&key=${process.env.YOUTUBE_API_KEY}`,
+      { next: { revalidate: 60 } },
+    );
+    data = await res.json();
+  } catch (error) {
+    console.error("Error fetching YouTube data:", error);
+    // Handle error
+    error = "Error found";
+  }
+
   return (
     <div className="w-full">
       <div className="flex w-full flex-col items-center overflow-hidden ">
@@ -17,7 +30,7 @@ export default function Videos() {
           <h2 className={`${abor.className} py-5 text-4xl`}>Videos</h2>
         </div>
         {/* All youtube videos */}
-        <VideoPlayer />
+        <VideoPlayer data={data} error={error} />
 
         <div className={`${abor.className}  pt-8 `}>
           Find all my videos at the links below
