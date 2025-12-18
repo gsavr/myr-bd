@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CalendlyEmbed } from "@/components/CalendlyEmbed";
+//import { CalendlyEmbed } from "@/components/CalendlyEmbed";
 import { alegThin, abor } from "@/assets/fonts/fonts";
 import { Metadata } from "next";
 
@@ -30,9 +30,7 @@ export default function Book() {
             shows, Lesson combos, Live drummer, Full Arabic or Turkish band,
             DJs, Henna artists, Tarot readers, Snake dancers.
           </p>
-          <p className="py-2 italic">
-            You may reach me via email, phone, or my scheduling calendar below
-          </p>
+          <p className="py-2 italic">You may reach me via email or phone</p>
           <p className="py-2">
             telephone:{" "}
             <Link className="underline" href="tel:+15129986317">
@@ -58,7 +56,7 @@ export default function Book() {
           </p>
         </div>
         <div className="h-[550px] w-full lg:h-[700px]">
-          <CalendlyEmbed />
+          {/* <CalendlyEmbed /> */}
         </div>
         <div></div>
       </div>
