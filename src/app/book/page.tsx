@@ -30,7 +30,9 @@ export default function Book() {
             shows, Lesson combos, Live drummer, Full Arabic or Turkish band,
             DJs, Henna artists, Tarot readers, Snake dancers.
           </p>
-          <p className="py-2 italic">You may reach me via email or phone</p>
+          <p className="py-2 text-lg italic">
+            You may reach me via email or phone
+          </p>
           <p className="py-2">
             telephone:{" "}
             <Link className="underline" href="tel:+15129986317">
