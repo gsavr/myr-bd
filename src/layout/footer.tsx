@@ -48,7 +48,7 @@ export function Footer() {
               <Image src={myr} alt="logo" width={30}></Image>
 
               <span className="w-full pl-1">
-                2024, Myrian Bellydancing &#174;
+                2026, Myrian Bellydancing &#174;
               </span>
             </Link>
           </div>
